@@ -7,9 +7,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
-import com.rone.road.R.id.drawerLayout
-import com.rone.road.R.id.navView
+import com.rone.road.R.id.*
 import com.rone.road.R.layout.activity_main
 import com.rone.road.fragmentExplore.exploreFragment
 import com.rone.road.fragmentProfile.profileFragment
@@ -55,9 +56,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
-
-
 
 
     }

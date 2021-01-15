@@ -13,4 +13,10 @@
     <string name="precio">Precio:</string>
     <string name="estancia">Estancia:</string>
     <string name="button">Button</string>
+    <string name="image_that_explains_road">Image that explains ROAD</string>
+    <string name="money_l">$$$$</string>
+    <string name="_123">123</string>
+    <string name="_4_dias">4 dias</string>
+    <string name="_11_de_diciembre">11 de diciembre</string>
+    <string name="viaje_a_xxxxx">Viaje a XXXXX</string>
 </resources>

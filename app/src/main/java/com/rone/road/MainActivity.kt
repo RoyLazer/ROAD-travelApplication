@@ -11,6 +11,9 @@ import com.google.android.material.navigation.NavigationView
 import com.rone.road.R.id.drawerLayout
 import com.rone.road.R.id.navView
 import com.rone.road.R.layout.activity_main
+import com.rone.road.fragmentExplore.exploreFragment
+import com.rone.road.fragmentProfile.profileFragment
+import com.rone.road.fragmentSearch.fragmentSearch
 
 class MainActivity : AppCompatActivity() {
     //lateinit makes the promise that we will initialize the toggle
@@ -26,15 +29,36 @@ class MainActivity : AppCompatActivity() {
         findViewById<DrawerLayout>(drawerLayout).addDrawerListener(toggle)
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val firstFragment = exploreFragment()
+        val secondFragment = fragmentSearch()
+        val thirdFragment = profileFragment()
+
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment, firstFragment)
+            commit()
+        }
 
         findViewById<NavigationView>(navView).setNavigationItemSelectedListener{
             when(it.itemId){
-                R.id.myItem1 -> Toast.makeText(applicationContext, "Presionaste el boton 1", Toast.LENGTH_LONG).show()
-                R.id.myItem2 -> Toast.makeText(applicationContext, "Presionaste el boton 2", Toast.LENGTH_LONG).show()
-                R.id.myItem3 -> Toast.makeText(applicationContext, "Presionaste el boton 3", Toast.LENGTH_LONG).show()
+                R.id.myItem1 ->    supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, firstFragment)
+                    commit()
+                }
+                R.id.myItem2 ->    supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, secondFragment)
+                    commit()
+                }
+                R.id.myItem3 ->    supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, thirdFragment)
+                    commit()
+                }
             }
             true
         }
+
+
+
+
 
     }
     //this function will make the items select

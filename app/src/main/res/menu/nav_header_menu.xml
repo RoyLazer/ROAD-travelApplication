@@ -10,4 +10,7 @@
     <item
         android:id="@+id/myItem3"
         android:title="@string/perfil"/>
+    <item
+        android:id="@+id/myItem4"
+        android:title="Cerrar Sesión"/>
 </menu>

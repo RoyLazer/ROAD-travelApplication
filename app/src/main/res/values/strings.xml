@@ -22,4 +22,5 @@
     <string name="explorar">Explorar</string>
     <string name="buscar">Buscar</string>
     <string name="perfil">Perfil</string>
+    <string name="searchheader">searchheader</string>
 </resources>

@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                     replace(R.id.flFragment, thirdFragment)
                     commit()
                 }
+                R.id.myItem4 -> finish()
             }
             true
         }

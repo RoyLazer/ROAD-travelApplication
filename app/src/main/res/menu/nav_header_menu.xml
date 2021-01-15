@@ -3,11 +3,11 @@
 
     <item
         android:id="@+id/myItem1"
-        android:title="Item 1"/>
+        android:title="@string/explorar"/>
     <item
         android:id="@+id/myItem2"
-        android:title="Item 2"/>
+        android:title="@string/buscar"/>
     <item
         android:id="@+id/myItem3"
-        android:title="Item 3"/>
+        android:title="@string/perfil"/>
 </menu>

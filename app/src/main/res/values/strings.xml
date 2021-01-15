@@ -19,4 +19,7 @@
     <string name="_4_dias">4 dias</string>
     <string name="_11_de_diciembre">11 de diciembre</string>
     <string name="viaje_a_xxxxx">Viaje a XXXXX</string>
+    <string name="explorar">Explorar</string>
+    <string name="buscar">Buscar</string>
+    <string name="perfil">Perfil</string>
 </resources>

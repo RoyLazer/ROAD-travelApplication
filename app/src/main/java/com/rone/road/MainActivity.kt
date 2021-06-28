@@ -1,5 +1,6 @@
 package com.rone.road
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -23,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
-
         //Let's create the toggle button
         toggle = ActionBarDrawerToggle(this, findViewById(drawerLayout) , R.string.open, R.string.close)
         //remember to specify the kind of object that we're looking for 'drawerlayout'
@@ -53,7 +53,9 @@ class MainActivity : AppCompatActivity() {
                     replace(R.id.flFragment, thirdFragment)
                     commit()
                 }
-                R.id.myItem4 -> finish()
+                R.id.myItem4 -> closeSession()
+
+
             }
             true
         }
@@ -68,6 +70,13 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
+    fun closeSession(){
+        //here we will deAuth the user and then we will return to the first activity
+        var startLogin = Intent(this, loginActivity::class.java)
+        startActivity(startLogin)
+        finish()
+    }
 
 
 

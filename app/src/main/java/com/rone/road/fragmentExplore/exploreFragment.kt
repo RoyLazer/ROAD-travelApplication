@@ -27,7 +27,12 @@ class exploreFragment : Fragment(){
             explorerTodo("Viaje a Puebla","4 personas", "4 días","1200xP","12 de Diciembre"),
             explorerTodo("Viaje a EdoMex","4 personas", "4 días","1200xP","12 de Diciembre"),
             explorerTodo("Viaje a Oaxaca","4 personas", "4 días","1200xP","12 de Diciembre"),
-            explorerTodo("Viaje a Yucatan","4 personas", "4 días","1200xP","12 de Diciembre")
+            explorerTodo("Viaje a Yucatan","4 personas", "4 días","1200xP","12 de Diciembre"),
+                explorerTodo("Viaje a Cancun","4 personas", "4 días","1200xP","12 de Diciembre") ,
+                explorerTodo("Viaje a Puebla","4 personas", "4 días","1200xP","12 de Diciembre"),
+                explorerTodo("Viaje a EdoMex","4 personas", "4 días","1200xP","12 de Diciembre"),
+                explorerTodo("Viaje a Oaxaca","4 personas", "4 días","1200xP","12 de Diciembre"),
+                explorerTodo("Viaje a Yucatan","4 personas", "4 días","1200xP","12 de Diciembre")
 
         )
         val adapter = explorerAdapter(todoList)
@@ -36,4 +41,9 @@ class exploreFragment : Fragment(){
 
     return view
     }
+
+
+
+
+
 }

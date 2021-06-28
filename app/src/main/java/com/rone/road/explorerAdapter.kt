@@ -1,9 +1,12 @@
 package com.rone.road
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class explorerAdapter ( var todos: List<explorerTodo>): RecyclerView.Adapter<explorerAdapter.TodoViewHolder>(){
@@ -22,6 +25,10 @@ class explorerAdapter ( var todos: List<explorerTodo>): RecyclerView.Adapter<exp
             findViewById<TextView>(R.id.daysText).text = todos[position].days
             findViewById<TextView>(R.id.prizeText).text = todos[position].prize
             findViewById<TextView>(R.id.peopleText).text = todos[position].people
+            var travelButton = findViewById<Button>(R.id.travelButton)
+            travelButton.setOnClickListener(){
+
+            }
         }
     }
 

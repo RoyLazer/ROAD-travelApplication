@@ -73,7 +73,7 @@
                 android:contentDescription="@string/image_that_explains_road" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/travelButton"
                 android:layout_width="361dp"
                 android:layout_height="46dp"
                 android:text="@string/button"

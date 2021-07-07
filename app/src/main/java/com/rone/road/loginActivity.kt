@@ -92,8 +92,6 @@ class loginActivity : AppCompatActivity() {
         }
         //Lanzamos nuestro Objetos de la conexion.
         queue.add(stringRequest)
-
-
     }
     fun register(view: View){
         val startRegister = Intent(this, registerActivity::class.java)
